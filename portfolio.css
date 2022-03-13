@@ -1,0 +1,129 @@
+﻿body {
+}
+
+p {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #696D7D;
+}
+a {
+    text-decoration: none;
+    color: #696D7D;
+}
+span {
+    color: aliceblue;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: large;
+    letter-spacing: 0.2em;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50% auto auto auto;
+}
+
+.textport {
+    font-size: 60pt;
+}
+
+.menu {
+    text-align: center;
+    border: #383838;
+    border-width: 0 0 1px;
+    font-size: 12pt;
+}
+
+.about_me {
+    padding: 40px 0 0 40px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    position: relative;
+    background: #F3B7C1;
+    border-radius: 38px 38px 0px 38px;
+}
+
+.text {
+}
+
+.mypic {
+    text-align: right;
+}
+
+#mypic {
+    margin-bottom: -4px;
+    margin-top: -200px;
+}
+
+.hobby {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 5px;
+}
+
+.subhead {
+    font-size: 24pt;
+}
+
+.hobby_container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.h_logo {
+    width: 70%;
+    height: auto;
+}
+.hobby_container > div#middle {
+    border-right: 1px solid #adb1c1;
+    border-left: 1px solid #adb1c1;
+}
+
+.skill {
+    padding-bottom: 50px;
+    margin: 0 5px;
+}
+
+.skill_container {
+    margin-top:50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+
+.logo_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    background: #F3CCC0;
+    border-radius: 20px;
+    height: 125px;
+    margin: 10px;
+    border: 3px solid #e6e8eb;
+}
+
+.s_logo {
+    margin-top: 20px;
+    width: auto;
+    height: 75px;
+}
+.logo_flex > div:last-child {
+    padding: 3px;
+    margin: 3px;
+}
+div > p.text_logo {
+    font-weight: bold;
+    font-size:large;
+    letter-spacing: 0.1em;
+}
