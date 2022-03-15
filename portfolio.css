@@ -208,9 +208,8 @@ div > p.text_logo {
 }
 
 .project_box {
-    width: auto;
-    height: 675px;
     margin-top: 100px;
+    padding-bottom: 20px;
     background: #FFFFFF;
     box-shadow: 0px -9px 28px 1px rgba(0, 0, 0, 0.13);
     border-radius: 26px;
@@ -220,6 +219,8 @@ div > p.text_logo {
 .img_project {
     margin-top: 50px;
     width: 60%;
+    box-shadow: 0px -9px 28px 1px rgb(0 0 0 / 13%);
+    border-radius: 26px;
 }
 
 .p_info > p {
@@ -227,26 +228,4 @@ div > p.text_logo {
     font-weight:900;
     opacity:0.7;
 }
-.button {
-    margin-top:-120px;
-    margin-left:230px;
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align:center;
-}
-.Next {
-    width: 120px;
-    height: 50px;
-    margin-top: 100px;
-    background: #FFFFFF;
-    box-shadow: 0px -9px 28px 1px rgba(0, 0, 0, 0.13);
-    border-radius: 26px;
-}
-.Back {
-    width: 120px;
-    height: 50px;
-    margin-top: 100px;
-    background: #FFFFFF;
-    box-shadow: 0px -9px 28px 1px rgba(0, 0, 0, 0.13);
-    border-radius: 26px;
-}
+
