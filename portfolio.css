@@ -1,6 +1,12 @@
 ﻿body {
 }
 
+p > menu {
+}
+
+    p > menu:hover {
+    }
+
 .bg {
     position: fixed;
     top: 600px;
@@ -70,8 +76,7 @@ i {
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 50% auto auto auto;
+    display: flex;
 }
 
 .textport {
@@ -85,6 +90,39 @@ i {
     border-width: 0 0 1px;
     font-size: 12pt;
 }
+ul {
+    display: flex;
+    height: 100%;
+    list-style: none;
+    list-style-image: none;
+}
+li {
+    padding: 20px 3rem 20px;
+}
+@media only screen and (max-width: 1140px) {
+    .header {
+        flex-wrap:wrap;
+    }
+
+}
+@media only screen and (max-width: 1092px){
+    li {
+        padding: 20px 4rem 20px;
+    }
+    ul{
+        margin-left:-30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    li {
+        padding: 20px 2rem 20px;
+    }
+    ul {
+        margin-left: -0px;
+    }
+}
+
 
 .about_me {
     padding: 40px 0 0 40px;
@@ -113,11 +151,54 @@ i {
     text-align: right;
 }
 
-#mypic {
+.mypic2{
     margin-bottom: -4px;
     margin-top: -120px;
 }
+@media only screen and (max-width: 1134px) {
 
+    .mypic2 {
+        margin-bottom: -4px;
+        margin-top: -88px;
+    }
+
+    .mypic {
+        padding: 10px 0 0 40px;
+    }
+    .about_me {
+        padding: 20px 0 0 40px;
+    }
+}
+@media only screen and (max-width: 958px) {
+    .about_me {
+        grid-template-columns: auto;
+        padding: 20px 20px 0 20px;
+    }
+    .text{
+        text-align:center;
+    }
+    .info_pic{
+        margin:auto;
+    }
+    .mypic {
+        padding-left: 0;
+        text-align: center;
+    }
+    .mypic2 {
+        margin-bottom: -4px;
+        margin-top: -40px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .text {
+        text-align: left;
+    }
+
+    .mypic2 {
+        width:300px;
+        height:auto
+    }
+}
 .hobby {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -140,17 +221,33 @@ i {
 .h1_logo {
     width: 50%;
     height: auto;
+    transition: transform .2s;
 }
+
+    .h1_logo:hover {
+        transform: scale(1.5);
+    }
+
 
 .h2_logo {
     width: 60%;
     height: auto;
+    transition: transform .2s;
 }
+
+    .h2_logo:hover {
+        transform: scale(1.5);
+    }
 
 .h3_logo {
     width: 45%;
     height: auto;
+    transition: transform .2s;
 }
+
+    .h3_logo:hover {
+        transform: scale(1.5);
+    }
 
 .hobby_container > div#middle {
     border-right: 1px solid #adb1c1;
@@ -201,6 +298,7 @@ div > p.text_logo {
     letter-spacing: 0.1em;
 }
 
+
 .project_container {
     max-width: 1000px;
     width: 90%;
@@ -219,13 +317,10 @@ div > p.text_logo {
 .img_project {
     margin-top: 50px;
     width: 60%;
-    box-shadow: 0px -9px 28px 1px rgb(0 0 0 / 13%);
-    border-radius: 26px;
 }
 
 .p_info > p {
-    font-size:42pt;
-    font-weight:900;
-    opacity:0.7;
+    font-size: 42pt;
+    font-weight: 900;
+    opacity: 0.7;
 }
-
