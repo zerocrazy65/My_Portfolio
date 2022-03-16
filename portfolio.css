@@ -276,20 +276,8 @@ div > p.text_logo {
 
     .about_me {
         padding: 16px 0 0 40px;
-    }
-
-    .mypic2 {
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    li {
-        padding: 20px 4rem 20px;
-    }
-
-    .about_me {
         margin-top: 0;
-        grid-template-columns: auto ;
+        grid-template-columns: auto;
     }
 
     .mypic {
@@ -303,9 +291,10 @@ div > p.text_logo {
     }
 
 
-    .text{
-        text-align:center;
+    .text {
+        text-align: center;
     }
+
     .skill_container {
         margin-top: 30px;
         display: grid;
@@ -314,7 +303,7 @@ div > p.text_logo {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 520px) {
     li {
         padding: 20px 2rem 20px;
     }
@@ -333,4 +322,12 @@ div > p.text_logo {
     .about_me {
         padding-left:20px;
     }
+    h1 {
+        font-size: 18pt;
+    }
+
+    .text {
+        text-align: left;
+    }
 }
+
