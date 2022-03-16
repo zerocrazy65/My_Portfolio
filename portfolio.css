@@ -94,12 +94,14 @@ i {
     border-width: 0 0 1px;
     font-size: 12pt;
 }
+
 ul {
     display: flex;
     height: 100%;
     list-style: none;
     list-style-image: none;
 }
+
 li {
     padding: 20px 3rem 20px;
 }
@@ -132,7 +134,7 @@ li {
     text-align: right;
 }
 
-.mypic2{
+.mypic2 {
     margin-bottom: -4px;
 }
 
@@ -263,16 +265,17 @@ div > p.text_logo {
     opacity: 0.7;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1015px) {
     .header {
         flex-wrap: wrap;
     }
 
-    .menu {
-        padding: 0 0 0 0;
+    ul {
+        padding-inline-start: 0;
     }
-    li {
-        padding: 20px 4rem 20px;
+
+    .menu {
+        padding: 0;
     }
 
     .about_me {
@@ -306,7 +309,13 @@ div > p.text_logo {
 
 @media only screen and (max-width: 520px) {
     li {
-        padding: 20px 2rem 20px;
+        padding: 16px 1em 20px;
+        text-align: left;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
     }
 
     .textport {
@@ -316,13 +325,16 @@ div > p.text_logo {
     span {
         letter-spacing: 0em;
     }
-    .mypic2{
-        width :300px;
-        height:auto;
+
+    .mypic2 {
+        width: 300px;
+        height: auto;
     }
+
     .about_me {
-        padding-left:20px;
+        padding-left: 20px;
     }
+
     h1 {
         font-size: 18pt;
     }
@@ -332,3 +344,21 @@ div > p.text_logo {
     }
 }
 
+@media only screen and (max-width: 520px) {
+    .mypic2 {
+        width: 200px;
+        height: auto;
+    }
+    span {
+        font-size:11pt;
+    }
+    h1 {
+        font-size: 14pt;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
