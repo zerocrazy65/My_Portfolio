@@ -293,6 +293,11 @@ li > a {
         li > a:hover:after {
             width: 100%;
         }
+.text_detail > span {
+    padding: 0 20px 0 20px;
+    color: #696D7D;
+    margin: 0 auto;
+}
 
 @media only screen and (max-width: 1015px) {
     .header {
