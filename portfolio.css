@@ -1,4 +1,7 @@
 ﻿body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
 p > menu {
@@ -99,29 +102,6 @@ ul {
 li {
     padding: 20px 3rem 20px;
 }
-@media only screen and (max-width: 1140px) {
-    .header {
-        flex-wrap:wrap;
-    }
-
-}
-@media only screen and (max-width: 1092px){
-    li {
-        padding: 20px 4rem 20px;
-    }
-    ul{
-        margin-left:-30px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    li {
-        padding: 20px 2rem 20px;
-    }
-    ul {
-        margin-left: -0px;
-    }
-}
 
 
 .about_me {
@@ -153,52 +133,9 @@ li {
 
 .mypic2{
     margin-bottom: -4px;
-    margin-top: -120px;
 }
-@media only screen and (max-width: 1134px) {
 
-    .mypic2 {
-        margin-bottom: -4px;
-        margin-top: -88px;
-    }
 
-    .mypic {
-        padding: 10px 0 0 40px;
-    }
-    .about_me {
-        padding: 20px 0 0 40px;
-    }
-}
-@media only screen and (max-width: 958px) {
-    .about_me {
-        grid-template-columns: auto;
-        padding: 20px 20px 0 20px;
-    }
-    .text{
-        text-align:center;
-    }
-    .info_pic{
-        margin:auto;
-    }
-    .mypic {
-        padding-left: 0;
-        text-align: center;
-    }
-    .mypic2 {
-        margin-bottom: -4px;
-        margin-top: -40px;
-    }
-}
-@media only screen and (max-width: 560px) {
-    .text {
-        text-align: left;
-    }
-
-    .mypic2 {
-        width:300px;
-        height:auto
-    }
-}
 .hobby {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -323,4 +260,77 @@ div > p.text_logo {
     font-size: 42pt;
     font-weight: 900;
     opacity: 0.7;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        padding: 0 0 0 0;
+    }
+    li {
+        padding: 20px 4rem 20px;
+    }
+
+    .about_me {
+        padding: 16px 0 0 40px;
+    }
+
+    .mypic2 {
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    li {
+        padding: 20px 4rem 20px;
+    }
+
+    .about_me {
+        margin-top: 0;
+        grid-template-columns: auto ;
+    }
+
+    .mypic {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .mypic2 {
+        margin-bottom: -4px;
+        margin-top: -40px;
+    }
+
+
+    .text{
+        text-align:center;
+    }
+    .skill_container {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    li {
+        padding: 20px 2rem 20px;
+    }
+
+    .textport {
+        font-size: 40px;
+    }
+
+    span {
+        letter-spacing: 0em;
+    }
+    .mypic2{
+        width :300px;
+        height:auto;
+    }
+    .about_me {
+        padding-left:20px;
+    }
 }
